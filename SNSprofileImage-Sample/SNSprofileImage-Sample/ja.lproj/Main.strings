@@ -1,0 +1,15 @@
+
+/* Class = "UITextField"; placeholder = "名前を登録してください"; ObjectID = "HEV-4n-E3o"; */
+"HEV-4n-E3o.placeholder" = "名前を登録してください";
+
+/* Class = "UIButton"; configuration.title = "アイコン画像を設定"; ObjectID = "SoM-Xc-x2f"; */
+"SoM-Xc-x2f.configuration.title" = "アイコン画像を設定";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SoM-Xc-x2f"; */
+"SoM-Xc-x2f.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "確認"; ObjectID = "hKX-OE-RME"; */
+"hKX-OE-RME.configuration.title" = "確認";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hKX-OE-RME"; */
+"hKX-OE-RME.normalTitle" = "Button";

@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6dE-nc-qjP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Profile Image View Controller-->
+        <scene sceneID="ktE-0x-0ce">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="6dE-nc-qjP" customClass="ProfileImageViewController" customModule="SNSprofileImage_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o5D-Xj-mS2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKX-OE-RME">
+                                <rect key="frame" x="40" y="717" width="334" height="45"/>
+                                <color key="backgroundColor" name="MainColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bBA-Pi-KF6"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="確認"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前を登録してください" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HEV-4n-E3o">
+                                <rect key="frame" x="40" y="632" width="334" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ARQ-iv-BHr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6DW-dy-nYk">
+                                <rect key="frame" x="147" y="252" width="120" height="117"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="YOM-mv-GMl"/>
+                                    <constraint firstAttribute="height" constant="120" id="roF-ic-Ch0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoM-Xc-x2f">
+                                <rect key="frame" x="107" y="385.5" width="200" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="WDf-W6-SzX"/>
+                                    <constraint firstAttribute="height" constant="25" id="uA6-fa-IIg"/>
+                                </constraints>
+                                <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="アイコン画像を設定">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="24M-gP-82H"/>
+                        <color key="backgroundColor" red="0.97967308760000005" green="0.97967308760000005" blue="0.97967308760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SoM-Xc-x2f" firstAttribute="centerX" secondItem="o5D-Xj-mS2" secondAttribute="centerX" id="69N-PJ-oZr"/>
+                            <constraint firstItem="hKX-OE-RME" firstAttribute="top" secondItem="HEV-4n-E3o" secondAttribute="bottom" constant="40" id="KCV-8u-2OS"/>
+                            <constraint firstItem="6DW-dy-nYk" firstAttribute="centerX" secondItem="o5D-Xj-mS2" secondAttribute="centerX" id="XiG-tf-heA"/>
+                            <constraint firstItem="SoM-Xc-x2f" firstAttribute="top" secondItem="6DW-dy-nYk" secondAttribute="bottom" constant="15" id="bfe-Y3-N3o"/>
+                            <constraint firstItem="24M-gP-82H" firstAttribute="trailing" secondItem="hKX-OE-RME" secondAttribute="trailing" constant="40" id="edS-Zb-SDR"/>
+                            <constraint firstItem="HEV-4n-E3o" firstAttribute="leading" secondItem="24M-gP-82H" secondAttribute="leading" constant="40" id="gFn-4D-Rrz"/>
+                            <constraint firstItem="24M-gP-82H" firstAttribute="trailing" secondItem="HEV-4n-E3o" secondAttribute="trailing" constant="40" id="jfG-QN-uNg"/>
+                            <constraint firstItem="SoM-Xc-x2f" firstAttribute="centerY" secondItem="o5D-Xj-mS2" secondAttribute="centerY" constant="-50" id="nk9-7m-auv"/>
+                            <constraint firstItem="hKX-OE-RME" firstAttribute="leading" secondItem="24M-gP-82H" secondAttribute="leading" constant="40" id="pJ0-9H-g0B"/>
+                            <constraint firstItem="24M-gP-82H" firstAttribute="bottom" secondItem="hKX-OE-RME" secondAttribute="bottom" constant="100" id="zJ2-Oq-Yd9"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="nMd-H0-eZN"/>
+                    <connections>
+                        <outlet property="addImageButton" destination="SoM-Xc-x2f" id="PaG-jM-CLd"/>
+                        <outlet property="nameTextField" destination="HEV-4n-E3o" id="q2R-U6-5LO"/>
+                        <outlet property="profileImage" destination="6DW-dy-nYk" id="biV-Dd-Zox"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEK-kb-9Hp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1000.0000000000001" y="108.48214285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <namedColor name="MainColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
